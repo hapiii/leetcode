@@ -26,13 +26,13 @@ class MyLinkedList {
 public:
     ListNode *head,*tail;
     int length;
-   
+    
     MyLinkedList() {
         head = nullptr;
         tail = nullptr;
         length = 0;
     }
-   #pragma mark =========== 获取第几个节点
+#pragma mark =========== 获取第几个节点
     int get(int index) {
         
         int i = 0;
@@ -47,7 +47,7 @@ public:
         return -1;
     }
     
-    #pragma mark =========== 头部插入节点
+#pragma mark =========== 头部插入节点
     void addAtHead(int val) {
         if (head == nullptr) {
             tail = head = new ListNode(val,nullptr);
@@ -59,7 +59,7 @@ public:
         length++;
     }
     
-    #pragma mark =========== 尾部追加节点
+#pragma mark =========== 尾部追加节点
     ListNode * addAtTail(int val) {
         if (tail != nullptr) {
             if (head == tail) {
@@ -79,7 +79,7 @@ public:
         return tail;
     }
     
-   #pragma mark =========== 插入
+#pragma mark =========== 插入
     void addAtIndex(int index, int val) {
         if(index > length-1 ){
             return;
@@ -109,7 +109,7 @@ public:
         }
     }
     
-    #pragma mark =========== 删除第几个节点
+#pragma mark =========== 删除第几个节点
     void deleteAtIndex(int ind) {
         if (ind > length-1) {
             return;
@@ -149,7 +149,7 @@ public:
         return;
         
     }
-    #pragma mark =========== 打印链表
+#pragma mark =========== 打印链表
     void printList(ListNode *node){
         
         while (node) {
@@ -214,7 +214,7 @@ public:
         }
         return false;
     }
-    #pragma mark =========== 返回环形链表的环点
+#pragma mark =========== 返回环形链表的环点
     ListNode *getIntersect(ListNode *head) {
         if(head == NULL || head->next == NULL)
             return nullptr;
@@ -232,7 +232,7 @@ public:
         return nullptr;
     }
     
-ListNode *detectCycle(ListNode *head) {
+    ListNode *detectCycle(ListNode *head) {
         if (head == nullptr) {
             return nullptr;
         }
@@ -267,7 +267,7 @@ ListNode *detectCycle(ListNode *head) {
         oddNode->next = evenHead;
         return head;
     }
-    #pragma mark =========== 回文链表
+#pragma mark =========== 回文链表
     bool isPalindrome(ListNode* head) {
         ///快慢指针查找中点
         ListNode *slow = head;
@@ -295,7 +295,7 @@ ListNode *detectCycle(ListNode *head) {
         }
         return true;
     }
-     #pragma mark =========== 相交链表
+#pragma mark =========== 相交链表
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         
         if (headA == nullptr || headB == nullptr) return nullptr;
@@ -307,17 +307,17 @@ ListNode *detectCycle(ListNode *head) {
         }
         return nodeA;
     }
-   #pragma mark =========== 删除倒数第N个节点
+#pragma mark =========== 删除倒数第N个节点
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         
         ListNode *dummy = new ListNode(0,head);
         ListNode *indexNode = dummy;
         ListNode *temp = dummy;
-
+        
         for (int i = 1; i<=n+1; i++) {
             indexNode = indexNode->next;
         }
-
+        
         while (indexNode!= nullptr) {
             indexNode = indexNode->next;
             temp = temp->next;
@@ -325,27 +325,53 @@ ListNode *detectCycle(ListNode *head) {
         temp->next = temp->next == nullptr? nullptr:temp->next->next;
         return dummy->next;
     }
-    #pragma mark =========== 旋转链表
+#pragma mark =========== 旋转链表
     ListNode* rotateRight(ListNode* head, int k) {
+        if (head == nullptr) {
+            return nullptr;
+        }
         if (head->next == nullptr) {
             return head;
         }
-        ListNode *newHead = head;
-        ListNode *newTail = head;
-        int n = 0;
-        while (head->next != nullptr) {
-            if (n == k) {
-                newTail = head;
-            }
-            head = head->next;
-            n++;
+        ListNode *old_tail = head;
+        int n;
+        for (n = 0; old_tail->next != nullptr; n++) {
+            old_tail = old_tail->next;
         }
-        head->next = newHead;
-        ListNode *end = newTail->next;
-        newTail->next = nullptr;
-        printList(end);
+        old_tail->next = head;
+        ListNode *new_tail = head;
+        for (int i = 0; i< n-k%n -1; i++) {
+            new_tail = new_tail->next;
+        }
+        ListNode *end = new_tail->next;
+        new_tail->next = nullptr;
         return end;
     }
+#pragma mark =========== 两数相加
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode *tempNode = new ListNode(-1,nullptr);
+        ListNode *node = tempNode;
+        tempNode->next = node;
+        int addNum = 0;
+        while (l1!= nullptr || l2 != nullptr || addNum != 0) {
+            int x = (l1 != nullptr) ? l1->val : 0;
+            int y = (l2 != nullptr) ? l2->val : 0;
+            int sum = x+y+addNum;
+           
+            node->next = new ListNode(sum%10,nullptr);
+             addNum = sum/10;
+            node = node->next;
+            if (l1 != nullptr) {
+                l1 = l1->next;
+            }
+            if (l2 != nullptr) {
+                l2 = l2->next;
+            }
+        }
+        printList(tempNode->next);
+        return tempNode->next;
+    }
+    
 #pragma mark =========== 链表排序
     ListNode* sortList(ListNode* head) {
         return head == nullptr?head:mergeSort(head);
@@ -373,6 +399,7 @@ private: ListNode * mergeSort(ListNode *head){
     //3.合并两个链表
     return mergeList(l,r);//7,8->
 }
+
 #pragma mark =========== 合并两个有序链表
 private:ListNode *mergeList(ListNode *l,ListNode *r){
     std::cout<<"合并的两个列表"<<l->val<<r->val<<"\n";
@@ -405,16 +432,18 @@ int main(int argc, const char * argv[]) {
     ListNode *head = list->addAtTail(1);
     list->addAtTail(2);
     list->addAtTail(3);
-    list->addAtTail(4);
-    list->addAtTail(5);
-   
+    
+     MyLinkedList *list2 = new MyLinkedList();
+    ListNode *head2 = list2->addAtTail(1);
+    list2->addAtTail(2);
+    list2->addAtTail(3);
     
     //ListNode *node = list->removeElements(list->head,5);
     
-//    ListNode *node = list->sortList(node1);
-   
+    //    ListNode *node = list->sortList(node1);
     
-    list->rotateRight(head,6);
+    
+    list->addTwoNumbers(head, head2);
     
     return 0;
 }
