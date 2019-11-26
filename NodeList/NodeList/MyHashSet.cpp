@@ -6,7 +6,6 @@
 //  Copyright © 2019 hapii. All rights reserved.
 //
 
-#include "MyHashSet.hpp"
 #include <vector>
 using namespace std;
 using std::vector;
