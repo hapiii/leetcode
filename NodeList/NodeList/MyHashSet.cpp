@@ -9,7 +9,7 @@
 #include <vector>
 using namespace std;
 using std::vector;
-
+//链表实现哈希集合 --拉链法
 struct Node{
     int val;
     Node *next;

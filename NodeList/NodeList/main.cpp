@@ -11,13 +11,14 @@
 #include <vector>
 #include <set>
 #include <unordered_map>
+#include <unordered_set>
 using namespace std;
 using std::vector;
 
 
 class Solution {
 public:
-    #pragma mark === 数组的交集
+#pragma mark === 数组的交集
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
         vector<int> result;
         set<int> s;
@@ -89,23 +90,72 @@ public:
         }
         return -1;
     }
+#pragma mark =====#350 两个数组的交集 II
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        unordered_map<int, int> n1Map;
+        vector<int> endDatas;
+        for (int i = 0; i<nums1.size(); i++) {
+            n1Map[nums1[i]] += 1;
+        }
+        for (int i = 0; i<nums2.size(); i++) {
+            if (n1Map[nums2[i]]>0) {
+                endDatas.push_back(nums2[i]);
+                n1Map[nums2[i]] -= 1;
+            }
+        }
+        return endDatas;
+    }
+#pragma mark =====#219 存在重复元素 II
+    bool containsNearbyDuplicate(vector<int>& nums, int k) {
+        
+        unordered_map<int, int> map;
+        for (int i = 0; i<nums.size(); i++) {
+            if ( map.count( nums[i] ) != 0  && i-map[nums[i]] <=k) {
+                return true;
+            }
+            map[nums[i]] = i;
+        }
+        return false;
+    }
+#pragma mark =====#3 无重复字符的最长子串
+    int lengthOfLongestSubstring(string s) {
+        if (s.size() == 0) {
+            return 0;
+        }
+        unordered_set<char> lookup;
+        int maxStr = 0;
+        int left = 0;
+        for (int i = 0; i<s.size(); i++) {
+            while (lookup.find(s[i]) != lookup.end()) {
+                lookup.erase(s[left]);
+                left++;
+            }
+            maxStr = max(maxStr,i-left+1);
+            lookup.insert(s[i]);
+        }
+        return maxStr;
+    }
+    
     
 };
 
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    MyLinkedList *list = new MyLinkedList();
     
-    ListNode *head = list->addAtTail(1);
-    list->addAtTail(2);
-    list->addAtTail(3);
-
-    list->removeElements(head, 3);
-    list->printList(head);
+    //    MyLinkedList *list = new MyLinkedList();
     
+    //    ListNode *head = list->addAtTail(1);
+    //    list->addAtTail(2);
+    //    list->addAtTail(3);
+    //
+    //    list->removeElements(head, 3);
+    //    list->printList(head);
+    //
     Solution *s = new Solution();
-    bool ok = s->isHappyy(19);
-    std::cout<<ok;
+    vector<int> arr1 = {1,2,3,4};
+    vector<int> arr2 = {1,2,3,4};
+    vector<int> end = s->intersect(arr1, arr2);
+    std::cout<<"asda";
+    
     return 0;
 }

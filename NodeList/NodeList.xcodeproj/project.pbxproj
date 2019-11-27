@@ -10,6 +10,7 @@
 		BF10D107238B7951002D4F04 /* ListNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF10D106238B7951002D4F04 /* ListNode.cpp */; };
 		BF10D10A238B7A09002D4F04 /* MyHashSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF10D108238B7A09002D4F04 /* MyHashSet.cpp */; };
 		BF10D10C238B855E002D4F04 /* MyHashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF10D10B238B855E002D4F04 /* MyHashMap.cpp */; };
+		BF4B33EC238E0F8400090A6A /* ArrHashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4B33EB238E0F8400090A6A /* ArrHashMap.cpp */; };
 		BF664CD42373C1E3005839BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF664CD32373C1E3005839BD /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		BF10D106238B7951002D4F04 /* ListNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ListNode.cpp; sourceTree = "<group>"; };
 		BF10D108238B7A09002D4F04 /* MyHashSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyHashSet.cpp; sourceTree = "<group>"; };
 		BF10D10B238B855E002D4F04 /* MyHashMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyHashMap.cpp; sourceTree = "<group>"; };
+		BF4B33EB238E0F8400090A6A /* ArrHashMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrHashMap.cpp; sourceTree = "<group>"; };
 		BF664CD02373C1E3005839BD /* NodeList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NodeList; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF664CD32373C1E3005839BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				BF10D106238B7951002D4F04 /* ListNode.cpp */,
 				BF10D108238B7A09002D4F04 /* MyHashSet.cpp */,
 				BF10D10B238B855E002D4F04 /* MyHashMap.cpp */,
+				BF4B33EB238E0F8400090A6A /* ArrHashMap.cpp */,
 			);
 			path = NodeList;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 				BF10D107238B7951002D4F04 /* ListNode.cpp in Sources */,
 				BF10D10C238B855E002D4F04 /* MyHashMap.cpp in Sources */,
 				BF664CD42373C1E3005839BD /* main.cpp in Sources */,
+				BF4B33EC238E0F8400090A6A /* ArrHashMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

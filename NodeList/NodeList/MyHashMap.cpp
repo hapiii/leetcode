@@ -5,7 +5,7 @@
 //  Created by hapii on 2019/11/25.
 //  Copyright © 2019 hapii. All rights reserved.
 //
-
+//链表实现哈希映射 --拉链法
 #include <stdio.h>
 #include <vector>
 using namespace std;
