@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #define Len 9
-
+///归并排序
 void merge(int a[],int start,int mid,int end){
     int n1 = mid - start +1;
     int n2 = end - mid;
