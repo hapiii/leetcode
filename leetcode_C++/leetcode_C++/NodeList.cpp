@@ -240,36 +240,13 @@ ListNode* reverseList(ListNode* head) {
            return prev;
     
 }
-int main(int argc, const char * argv[]) {
-    // insert code here...
-   
-    List l1;
-    ListNode *n1 = l1.Insert(1);
-    l1.Insert(1);
-    l1.Insert(2);
-    ListNode *n5 = l1.Insert(5);
-    l1.Insert(4);
-    l1.Insert(4);
-    
-//    List l2;
-//    ListNode *n2 = l2.Insert(1);
-//    l2.Insert(3);
-//    l2.Insert(4);
-   
-    //mergeTwoLists(n1, n2);
-    //deleteDuplicates(n1);
-    //deleteNode(n5);
-    //ListNode *mNode =  middleeNode(n1);
-    ListNode *rNode = reverseList(n1);
-    l1.print();
-    return 0;
-}
 
 int get(int index) {
-    int i = 0;
-    ListNode *node = head;
-    while (i<=index) {
-        i++;
-        
-    }
+//    int i = 0;
+//    ListNode *node = head;
+//    while (i<=index) {
+//        i++;
+//
+//    }
+    return 0;
 }
