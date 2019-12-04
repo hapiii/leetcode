@@ -10,6 +10,7 @@
 		B55736862392AB7100DD9A2A /* code_724.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B55736852392AB7100DD9A2A /* code_724.cpp */; };
 		B5573688239388B900DD9A2A /* code_747.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5573687239388B900DD9A2A /* code_747.cpp */; };
 		B557368A2393FB9B00DD9A2A /* code_66.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B55736892393FB9B00DD9A2A /* code_66.cpp */; };
+		B557368C2397F29000DD9A2A /* code_151.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B557368B2397F29000DD9A2A /* code_151.cpp */; };
 		BF6B1D5A2391115300CB482F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D592391115300CB482F /* main.cpp */; };
 		BF6B1D73239111BF00CB482F /* ArrHashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */; };
 		BF6B1D74239111BF00CB482F /* code_454.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D61239111BE00CB482F /* code_454.cpp */; };
@@ -48,6 +49,7 @@
 		B55736852392AB7100DD9A2A /* code_724.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_724.cpp; sourceTree = "<group>"; };
 		B5573687239388B900DD9A2A /* code_747.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_747.cpp; sourceTree = "<group>"; };
 		B55736892393FB9B00DD9A2A /* code_66.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_66.cpp; sourceTree = "<group>"; };
+		B557368B2397F29000DD9A2A /* code_151.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_151.cpp; sourceTree = "<group>"; };
 		BF6B1D562391115300CB482F /* leetcode_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B1D592391115300CB482F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrHashMap.cpp; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				B5573687239388B900DD9A2A /* code_747.cpp */,
 				B55736892393FB9B00DD9A2A /* code_66.cpp */,
 				B55736852392AB7100DD9A2A /* code_724.cpp */,
+				B557368B2397F29000DD9A2A /* code_151.cpp */,
 				BF6B1D63239111BE00CB482F /* DoubleHashMap.cpp */,
 				BF6B1D70239111BF00CB482F /* ListNode.cpp */,
 				BF6B1D6B239111BE00CB482F /* main.cpp */,
@@ -207,6 +210,7 @@
 				BF6B1D7C239111BF00CB482F /* code_349.cpp in Sources */,
 				B5573688239388B900DD9A2A /* code_747.cpp in Sources */,
 				BF6B1D7D239111BF00CB482F /* code_49.cpp in Sources */,
+				B557368C2397F29000DD9A2A /* code_151.cpp in Sources */,
 				BF6B1D81239111BF00CB482F /* code_36.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

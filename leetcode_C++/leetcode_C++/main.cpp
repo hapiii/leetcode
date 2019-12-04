@@ -8,6 +8,8 @@
 
 #include <iostream>
 #include "code_724.cpp"
+#include "code_151.cpp"
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -21,5 +23,6 @@ int main(int argc, const char * argv[]) {
 //    arr.push_back(6);
     
     code_724().pivotIndex(arr);
+    code_151().reverseWords("  hello world!  ");
     return 0;
 }
