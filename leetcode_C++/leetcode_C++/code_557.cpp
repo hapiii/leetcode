@@ -23,8 +23,16 @@ using namespace std;
 
 class code_557{
 public:
-    string reverseWords(string s) {
-        
+   
+    string reverseWords(string s){
+        auto begin = s.begin(),it = begin;
+        for (; it<s.end(); it++) {
+            if (*it == ' ') {
+                reverse(begin, it);
+                begin = it + 1;
+            }
+        }
+        reverse(begin, it);
         return s;
     }
 };

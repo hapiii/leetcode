@@ -9,20 +9,21 @@
 #include <iostream>
 #include "code_724.cpp"
 #include "code_151.cpp"
-
+#include "code_26.cpp"
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-    vector<int> arr;
-    //[1,7,3,6,5,6]
-//    arr.push_back(1);
-//    arr.push_back(7);
-//    arr.push_back(3);
-//    arr.push_back(6);
-//    arr.push_back(5);
-//    arr.push_back(6);
+    vector<int> tempArr;
+    tempArr.push_back(1);
+    tempArr.push_back(1);
+    tempArr.push_back(2);
+    tempArr.push_back(2);
+    tempArr.push_back(3);
+    tempArr.push_back(4);
     
-    code_724().pivotIndex(arr);
+    code_724().pivotIndex(tempArr);
     code_151().reverseWords("  hello world!  ");
+    
+    code_26().removeDuplicates(tempArr);
     return 0;
 }
