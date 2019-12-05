@@ -12,6 +12,15 @@
 #include <iostream>
 using namespace std;
 
+/*
+ 给定一个字符串，逐个翻转字符串中的每个单词。
+
+ 示例 1：
+
+ 输入: "the sky is blue"
+ 输出: "blue is sky the"
+ */
+
 class code_151{
 public:
     
@@ -23,25 +32,23 @@ public:
             if (s[i] == ' ' && temp.size() > 0) {
                 end.push_back(temp);
                 temp = "";
-            }else if(i == s.size()-1 && temp.size() > 0) {
+            }else if(i == s.size()-1 && temp.size() > 0 && s[i]!= ' ') {
                 temp = temp+s[i];
                 end.push_back(temp);
                 temp = "";
-            }else{
+            }else if(s[i] != ' ') {
                 temp = temp+s[i];
-                
             }
         }
         
         for (int i = end.size()-1; i>=0; i--) {
-            std::cout<<end[i]<<"==="<<"\n";
             if ( i == end.size()-1) {
                 temp =  end[i];
             }else{
                 temp = temp + " " + end[i];
             }
         }
-        std::cout<<temp<<"\n";
+       
         return temp;
     }
 };
