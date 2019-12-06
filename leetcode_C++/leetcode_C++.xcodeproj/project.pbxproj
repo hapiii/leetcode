@@ -12,6 +12,8 @@
 		B557368A2393FB9B00DD9A2A /* code_66.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B55736892393FB9B00DD9A2A /* code_66.cpp */; };
 		B557368C2397F29000DD9A2A /* code_151.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B557368B2397F29000DD9A2A /* code_151.cpp */; };
 		B557368E23993CA300DD9A2A /* code_26.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B557368D23993CA300DD9A2A /* code_26.cpp */; };
+		BF19AF1B239A3C05002B0DD6 /* code_561.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF1A239A3C05002B0DD6 /* code_561.cpp */; };
+		BF19AF1D239A3EF8002B0DD6 /* code_344.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF1C239A3EF8002B0DD6 /* code_344.cpp */; };
 		BF6B1D5A2391115300CB482F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D592391115300CB482F /* main.cpp */; };
 		BF6B1D73239111BF00CB482F /* ArrHashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */; };
 		BF6B1D74239111BF00CB482F /* code_454.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D61239111BE00CB482F /* code_454.cpp */; };
@@ -53,6 +55,8 @@
 		B55736892393FB9B00DD9A2A /* code_66.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_66.cpp; sourceTree = "<group>"; };
 		B557368B2397F29000DD9A2A /* code_151.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_151.cpp; sourceTree = "<group>"; };
 		B557368D23993CA300DD9A2A /* code_26.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_26.cpp; sourceTree = "<group>"; };
+		BF19AF1A239A3C05002B0DD6 /* code_561.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_561.cpp; sourceTree = "<group>"; };
+		BF19AF1C239A3EF8002B0DD6 /* code_344.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_344.cpp; sourceTree = "<group>"; };
 		BF6B1D562391115300CB482F /* leetcode_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B1D592391115300CB482F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrHashMap.cpp; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				B55736852392AB7100DD9A2A /* code_724.cpp */,
 				B557368B2397F29000DD9A2A /* code_151.cpp */,
 				BFEB69A623989DDC00307DAB /* code_557.cpp */,
+				BF19AF1A239A3C05002B0DD6 /* code_561.cpp */,
+				BF19AF1C239A3EF8002B0DD6 /* code_344.cpp */,
 				B557368D23993CA300DD9A2A /* code_26.cpp */,
 				BF6B1D63239111BE00CB482F /* DoubleHashMap.cpp */,
 				BF6B1D70239111BF00CB482F /* ListNode.cpp */,
@@ -195,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6B1D7A239111BF00CB482F /* code_3.cpp in Sources */,
+				BF19AF1B239A3C05002B0DD6 /* code_561.cpp in Sources */,
 				BF6B1D73239111BF00CB482F /* ArrHashMap.cpp in Sources */,
 				BF6B1D75239111BF00CB482F /* code_347.cpp in Sources */,
 				BF6B1D7F239111BF00CB482F /* code_219.cpp in Sources */,
@@ -203,6 +210,7 @@
 				BF6B1D7B239111BF00CB482F /* code_350.cpp in Sources */,
 				BF6B1D78239111BF00CB482F /* code_387.cpp in Sources */,
 				B55736862392AB7100DD9A2A /* code_724.cpp in Sources */,
+				BF19AF1D239A3EF8002B0DD6 /* code_344.cpp in Sources */,
 				BF6B1D74239111BF00CB482F /* code_454.cpp in Sources */,
 				BF6B1D84239111BF00CB482F /* code_202.cpp in Sources */,
 				BF6B1D76239111BF00CB482F /* DoubleHashMap.cpp in Sources */,

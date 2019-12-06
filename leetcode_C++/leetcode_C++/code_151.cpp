@@ -26,7 +26,7 @@ public:
     
     string reverseWords(string s) {
         
-        vector<string> end = {};
+        vector<string> end;
         string temp = "";
         for (int i = 0; i<s.size(); i++) {
             if (s[i] == ' ' && temp.size() > 0) {
