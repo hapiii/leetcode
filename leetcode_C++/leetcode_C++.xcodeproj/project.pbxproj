@@ -14,6 +14,9 @@
 		B557368E23993CA300DD9A2A /* code_26.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B557368D23993CA300DD9A2A /* code_26.cpp */; };
 		B5573690239BD8A700DD9A2A /* code_58.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B557368F239BD8A700DD9A2A /* code_58.cpp */; };
 		B5573692239BE00200DD9A2A /* code_27.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5573691239BE00100DD9A2A /* code_27.cpp */; };
+		B5573694239D1A7700DD9A2A /* code_167.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5573693239D1A7700DD9A2A /* code_167.cpp */; };
+		B5573696239D1E6C00DD9A2A /* code_485.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5573695239D1E6C00DD9A2A /* code_485.cpp */; };
+		B5573698239D22AF00DD9A2A /* code_209.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5573697239D22AF00DD9A2A /* code_209.cpp */; };
 		BF19AF1B239A3C05002B0DD6 /* code_561.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF1A239A3C05002B0DD6 /* code_561.cpp */; };
 		BF19AF1D239A3EF8002B0DD6 /* code_344.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF1C239A3EF8002B0DD6 /* code_344.cpp */; };
 		BF6B1D5A2391115300CB482F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D592391115300CB482F /* main.cpp */; };
@@ -59,6 +62,9 @@
 		B557368D23993CA300DD9A2A /* code_26.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_26.cpp; sourceTree = "<group>"; };
 		B557368F239BD8A700DD9A2A /* code_58.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_58.cpp; sourceTree = "<group>"; };
 		B5573691239BE00100DD9A2A /* code_27.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_27.cpp; sourceTree = "<group>"; };
+		B5573693239D1A7700DD9A2A /* code_167.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_167.cpp; sourceTree = "<group>"; };
+		B5573695239D1E6C00DD9A2A /* code_485.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_485.cpp; sourceTree = "<group>"; };
+		B5573697239D22AF00DD9A2A /* code_209.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_209.cpp; sourceTree = "<group>"; };
 		BF19AF1A239A3C05002B0DD6 /* code_561.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_561.cpp; sourceTree = "<group>"; };
 		BF19AF1C239A3EF8002B0DD6 /* code_344.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_344.cpp; sourceTree = "<group>"; };
 		BF6B1D562391115300CB482F /* leetcode_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +143,9 @@
 				BF19AF1C239A3EF8002B0DD6 /* code_344.cpp */,
 				B557368D23993CA300DD9A2A /* code_26.cpp */,
 				B5573691239BE00100DD9A2A /* code_27.cpp */,
+				B5573693239D1A7700DD9A2A /* code_167.cpp */,
+				B5573695239D1E6C00DD9A2A /* code_485.cpp */,
+				B5573697239D22AF00DD9A2A /* code_209.cpp */,
 				B557368F239BD8A700DD9A2A /* code_58.cpp */,
 				BF6B1D63239111BE00CB482F /* DoubleHashMap.cpp */,
 				BF6B1D70239111BF00CB482F /* ListNode.cpp */,
@@ -219,8 +228,10 @@
 				BF19AF1D239A3EF8002B0DD6 /* code_344.cpp in Sources */,
 				B5573692239BE00200DD9A2A /* code_27.cpp in Sources */,
 				BF6B1D74239111BF00CB482F /* code_454.cpp in Sources */,
+				B5573694239D1A7700DD9A2A /* code_167.cpp in Sources */,
 				BF6B1D84239111BF00CB482F /* code_202.cpp in Sources */,
 				BF6B1D76239111BF00CB482F /* DoubleHashMap.cpp in Sources */,
+				B5573698239D22AF00DD9A2A /* code_209.cpp in Sources */,
 				B5573690239BD8A700DD9A2A /* code_58.cpp in Sources */,
 				BF6B1D83239111BF00CB482F /* ListNode.cpp in Sources */,
 				BF6B1D77239111BF00CB482F /* code_771.cpp in Sources */,
@@ -229,6 +240,7 @@
 				BF6B1D5A2391115300CB482F /* main.cpp in Sources */,
 				BF6B1D7E239111BF00CB482F /* main.cpp in Sources */,
 				BF6B1D85239111BF00CB482F /* TwoHashMap.cpp in Sources */,
+				B5573696239D1E6C00DD9A2A /* code_485.cpp in Sources */,
 				BFEB69A723989DDC00307DAB /* code_557.cpp in Sources */,
 				BF6B1D80239111BF00CB482F /* MyHashSet.cpp in Sources */,
 				BF6B1D7C239111BF00CB482F /* code_349.cpp in Sources */,
