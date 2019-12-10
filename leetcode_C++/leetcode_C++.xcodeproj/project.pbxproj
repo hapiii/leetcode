@@ -19,6 +19,9 @@
 		B5573698239D22AF00DD9A2A /* code_209.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5573697239D22AF00DD9A2A /* code_209.cpp */; };
 		BF19AF1B239A3C05002B0DD6 /* code_561.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF1A239A3C05002B0DD6 /* code_561.cpp */; };
 		BF19AF1D239A3EF8002B0DD6 /* code_344.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF1C239A3EF8002B0DD6 /* code_344.cpp */; };
+		BF19AF1F239E1FD4002B0DD6 /* code_498.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF1E239E1FD4002B0DD6 /* code_498.cpp */; };
+		BF19AF21239E2369002B0DD6 /* code_118.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF20239E2369002B0DD6 /* code_118.cpp */; };
+		BF19AF23239E276F002B0DD6 /* code_54.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF19AF22239E276F002B0DD6 /* code_54.cpp */; };
 		BF6B1D5A2391115300CB482F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D592391115300CB482F /* main.cpp */; };
 		BF6B1D73239111BF00CB482F /* ArrHashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */; };
 		BF6B1D74239111BF00CB482F /* code_454.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D61239111BE00CB482F /* code_454.cpp */; };
@@ -67,6 +70,9 @@
 		B5573697239D22AF00DD9A2A /* code_209.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_209.cpp; sourceTree = "<group>"; };
 		BF19AF1A239A3C05002B0DD6 /* code_561.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_561.cpp; sourceTree = "<group>"; };
 		BF19AF1C239A3EF8002B0DD6 /* code_344.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_344.cpp; sourceTree = "<group>"; };
+		BF19AF1E239E1FD4002B0DD6 /* code_498.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_498.cpp; sourceTree = "<group>"; };
+		BF19AF20239E2369002B0DD6 /* code_118.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_118.cpp; sourceTree = "<group>"; };
+		BF19AF22239E276F002B0DD6 /* code_54.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_54.cpp; sourceTree = "<group>"; };
 		BF6B1D562391115300CB482F /* leetcode_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B1D592391115300CB482F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrHashMap.cpp; sourceTree = "<group>"; };
@@ -146,6 +152,9 @@
 				B5573693239D1A7700DD9A2A /* code_167.cpp */,
 				B5573695239D1E6C00DD9A2A /* code_485.cpp */,
 				B5573697239D22AF00DD9A2A /* code_209.cpp */,
+				BF19AF1E239E1FD4002B0DD6 /* code_498.cpp */,
+				BF19AF20239E2369002B0DD6 /* code_118.cpp */,
+				BF19AF22239E276F002B0DD6 /* code_54.cpp */,
 				B557368F239BD8A700DD9A2A /* code_58.cpp */,
 				BF6B1D63239111BE00CB482F /* DoubleHashMap.cpp */,
 				BF6B1D70239111BF00CB482F /* ListNode.cpp */,
@@ -226,6 +235,7 @@
 				BF6B1D78239111BF00CB482F /* code_387.cpp in Sources */,
 				B55736862392AB7100DD9A2A /* code_724.cpp in Sources */,
 				BF19AF1D239A3EF8002B0DD6 /* code_344.cpp in Sources */,
+				BF19AF23239E276F002B0DD6 /* code_54.cpp in Sources */,
 				B5573692239BE00200DD9A2A /* code_27.cpp in Sources */,
 				BF6B1D74239111BF00CB482F /* code_454.cpp in Sources */,
 				B5573694239D1A7700DD9A2A /* code_167.cpp in Sources */,
@@ -237,6 +247,8 @@
 				BF6B1D77239111BF00CB482F /* code_771.cpp in Sources */,
 				B557368E23993CA300DD9A2A /* code_26.cpp in Sources */,
 				BF6B1D79239111BF00CB482F /* MyHashMap.cpp in Sources */,
+				BF19AF1F239E1FD4002B0DD6 /* code_498.cpp in Sources */,
+				BF19AF21239E2369002B0DD6 /* code_118.cpp in Sources */,
 				BF6B1D5A2391115300CB482F /* main.cpp in Sources */,
 				BF6B1D7E239111BF00CB482F /* main.cpp in Sources */,
 				BF6B1D85239111BF00CB482F /* TwoHashMap.cpp in Sources */,

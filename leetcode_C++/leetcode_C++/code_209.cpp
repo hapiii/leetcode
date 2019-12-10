@@ -27,18 +27,18 @@ class code_209 {
     
 public:
     int minSubArrayLen(int s, vector<int>& nums) {
-
+        
         int ans = INT_MAX;
         int left = 0;
         int sum = 0;
         for (int i = 0; i < nums.size(); i++) {
             sum += nums[i];
             while (sum >= s) {
-                ans = min(ans, i + 1 - left);
+                ans = min(ans, i+1-left);
                 sum -= nums[left++];
             }
         }
-        return (ans != INT_MAX) ? ans : 0;
+        return (ans != INT_MAX)?ans:0;
         
     }
 };
