@@ -371,7 +371,29 @@ public:
         printList(tempNode->next);
         return tempNode->next;
     }
+#pragma mark =========== 两两交换链表中的节点
+    ListNode* swapPairs(ListNode* head) {
+        int temp = 0;
+        ListNode  *end = head;
+        while(head != nullptr &&head->next != nullptr &&head->next->next != nullptr ){
+            temp = head->val;
+            head->val = head->next->val;
+            head->next->val = temp;
+            head = head->next->next;
+        }
+        return end;
+        
+    }
     
+    ListNode* swapPairss(ListNode* head) {
+        
+        if (head == NULL || head->next == NULL) return head;
+        auto p1 = head;
+        auto p2 = p1->next;
+        p1->next = swapPairs(p2->next);
+        p2->next = p1;
+        return p2;
+    }
 #pragma mark =========== 链表排序
     ListNode* sortList(ListNode* head) {
         return head == nullptr?head:mergeSort(head);
