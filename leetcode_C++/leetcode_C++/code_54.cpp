@@ -29,19 +29,19 @@ using namespace std;
 class code_54 {
     
 public:
-   vector<int> spiralOrder(vector<vector<int>>& matrix) {
-       vector<int> endData;
-       int left = 0,top = 0;
-       int right = matrix[0].size(), bottom = matrix.size();
-       int curX = 0,curY = 0;
-       while (left<top && top<bottom) {
-//           if (curX == left && curY == top) {
-//                endData.push_back(matrix[curX++][curX]);
-//           }else if(curX == right curY == right){
-//               endData.push_back(matrix[])
-//           }
-          
-        
-       }
-    }
+//   vector<int> spiralOrder(vector<vector<int>>& matrix) {
+//       vector<int> endData;
+//       int left = 0,top = 0;
+//       int right = matrix[0].size(), bottom = matrix.size();
+//       int curX = 0,curY = 0;
+//       while (left<top && top<bottom) {
+////           if (curX == left && curY == top) {
+////                endData.push_back(matrix[curX++][curX]);
+////           }else if(curX == right curY == right){
+////               endData.push_back(matrix[])
+////           }
+//          
+//        return <#expression#>
+//       }
+//    }
 };
