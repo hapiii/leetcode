@@ -11,7 +11,7 @@
 #include "code_151.cpp"
 #include "code_26.cpp"
 #include "code_344.cpp"
-
+#include "code_498.cpp"
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -28,9 +28,9 @@ int main(int argc, const char * argv[]) {
     tempStrs.push_back('e');
     tempStrs.push_back('l');
     tempStrs.push_back('o');
-    code_724().pivotIndex(tempArr);
-    //code_151().reverseWords("  hello world!  ");
-    code_26().removeDuplicates(tempArr);
-    code_344().reverseString(tempStrs);
+//    code_724().pivotIndex(tempArr);
+//    code_26().removeDuplicates(tempArr);
+//    code_344().reverseString(tempStrs);
+    code_498().test();
     return 0;
 }
