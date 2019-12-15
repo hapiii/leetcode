@@ -36,7 +36,8 @@ public:
 
 class MyStack {
     private:
-     queue<int> inQueue,outQueue;
+     queue<int> inQueue;
+    int topValue;
     void checkout() {
          
     };
@@ -46,30 +47,37 @@ public:
         
     }
     
-    /** Push element x onto stack. */
+    /** x 入栈 */
     void push(int x) {
-        if (inQueue.empty()) {
-            inQueue.push(x);
-            while (!outQueue.empty()) {
-                inQueue.push(outQueue.front());
-                outQueue.pop();
-            }
-        }
+        inQueue.push(x);
+        topValue = x;
     }
     
     /** 移除栈顶元素 */
     int pop() {
-        return outQueue.pop();
+        queue<int> containerQueue;
+        while (inQueue.size() > 1) {
+            if (inQueue.size() == 2) {
+                topValue = inQueue.front();
+            }
+            containerQueue.push(inQueue.front());
+            inQueue.pop();
+        }
+       
+        int value = inQueue.front();
+        inQueue.pop();
+        inQueue = containerQueue;
+        return value;
     }
     
-    /** Get the top element. */
+    /** 获取栈顶元素 */
     int top() {
-        return outQueue.
+        return topValue;
     }
     
     /** Returns whether the stack is empty. */
     bool empty() {
-        
+        return inQueue.size()== 0;
     }
 };
 
