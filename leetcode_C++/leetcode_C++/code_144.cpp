@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 #include <vector>
+#include <stack>
+
 using namespace std;
 struct TreeNode {
     int val;
@@ -43,6 +45,34 @@ public:
 //        }
 //        return node;
 //    };
+    /*
+     栈解法
+     while(p || S不空){
+         while(p){
+             访问p节点；
+             p的右子树入S;
+             p = p的左子树;
+         }
+         p = S栈顶弹出;
+     }
+     */
+    vector<int> stackPreorderTraversal(TreeNode* root){
+        stack<TreeNode *>stack;
+        vector<int> res;
+        TreeNode *node = root;
+        while (node || stack.size()) {
+            while (node) {
+                stack.push(node->right);
+                res.push_back(node->val);
+                node = node->left;
+            }
+            node = stack.top();
+            stack.pop();
+        }
+        return res;
+    }
+    
+    
     vector<int> preorderTraversal(TreeNode* root) {
         vector<int> res;
         while (root) {
@@ -64,6 +94,8 @@ public:
                 }
             }
         }
+        
+       
         return res;
        
     }
