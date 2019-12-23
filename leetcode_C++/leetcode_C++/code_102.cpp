@@ -34,7 +34,6 @@ public:
         if (root->right != NULL) {
             helper(root->right, level+1);
         }
-        
     }
     vector<vector<int>> levelOrder(TreeNode* root) {
         if (root == NULL) return result;
