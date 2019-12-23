@@ -50,9 +50,7 @@ private:
 public:
     
     bool hasPathSum(TreeNode* root, int sum) {
-        if (root == nullptr) {
-            return false;
-        }
+        
         return helper(root, sum);
     }
     
