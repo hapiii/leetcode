@@ -12,6 +12,8 @@
 #include "code_26.cpp"
 #include "code_344.cpp"
 #include "code_498.cpp"
+#include "code_50.cpp"
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -32,5 +34,6 @@ int main(int argc, const char * argv[]) {
 //    code_26().removeDuplicates(tempArr);
 //    code_344().reverseString(tempStrs);
     code_498().test();
+    code_50().test();
     return 0;
 }
