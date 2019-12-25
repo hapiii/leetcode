@@ -37,6 +37,7 @@
 		BF4367F623AA338E007878B9 /* code_20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4367F523AA338E007878B9 /* code_20.cpp */; };
 		BF4367F823AB1772007878B9 /* code_739.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4367F723AB1772007878B9 /* code_739.cpp */; };
 		BF4367FA23AB23C7007878B9 /* code_200.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4367F923AB23C7007878B9 /* code_200.cpp */; };
+		BF53494C23B337BA0093ED06 /* code_106.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF53494B23B337BA0093ED06 /* code_106.cpp */; };
 		BF6B1D73239111BF00CB482F /* ArrHashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */; };
 		BF6B1D74239111BF00CB482F /* code_454.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D61239111BE00CB482F /* code_454.cpp */; };
 		BF6B1D75239111BF00CB482F /* code_347.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D62239111BE00CB482F /* code_347.cpp */; };
@@ -108,6 +109,7 @@
 		BF4367F523AA338E007878B9 /* code_20.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_20.cpp; sourceTree = "<group>"; };
 		BF4367F723AB1772007878B9 /* code_739.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_739.cpp; sourceTree = "<group>"; };
 		BF4367F923AB23C7007878B9 /* code_200.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_200.cpp; sourceTree = "<group>"; };
+		BF53494B23B337BA0093ED06 /* code_106.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_106.cpp; sourceTree = "<group>"; };
 		BF6B1D562391115300CB482F /* leetcode_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrHashMap.cpp; sourceTree = "<group>"; };
 		BF6B1D61239111BE00CB482F /* code_454.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = code_454.cpp; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				BF8D9D9523B0630300951B06 /* code_101.cpp */,
 				B50EDBE623AF9EDD00F9468F /* code_102.cpp */,
 				B50EDBE823AFA55800F9468F /* code_104.cpp */,
+				BF53494B23B337BA0093ED06 /* code_106.cpp */,
 				BF8D9D9723B06A2200951B06 /* code_112.cpp */,
 				BF8D9D9323ADFB8B00951B06 /* code_145.cpp */,
 				BF4367EF23AA0B62007878B9 /* code_98.cpp */,
@@ -330,6 +333,7 @@
 				BF6B1D7E239111BF00CB482F /* main.cpp in Sources */,
 				BF6B1D85239111BF00CB482F /* TwoHashMap.cpp in Sources */,
 				B5573696239D1E6C00DD9A2A /* code_485.cpp in Sources */,
+				BF53494C23B337BA0093ED06 /* code_106.cpp in Sources */,
 				BFEB69A723989DDC00307DAB /* code_557.cpp in Sources */,
 				B50EDBE523A65C1100F9468F /* code_703.cpp in Sources */,
 				BF6B1D80239111BF00CB482F /* MyHashSet.cpp in Sources */,
