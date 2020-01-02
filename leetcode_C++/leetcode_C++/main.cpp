@@ -13,6 +13,7 @@
 #include "code_344.cpp"
 #include "code_498.cpp"
 #include "code_50.cpp"
+#include "code_33.cpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -35,5 +36,6 @@ int main(int argc, const char * argv[]) {
 //    code_344().reverseString(tempStrs);
     code_498().test();
     code_50().test();
+    code_33().test();
     return 0;
 }
