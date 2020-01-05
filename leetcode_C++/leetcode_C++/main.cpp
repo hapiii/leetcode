@@ -14,6 +14,7 @@
 #include "code_498.cpp"
 #include "code_50.cpp"
 #include "code_33.cpp"
+#include "code_153.cpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -34,8 +35,9 @@ int main(int argc, const char * argv[]) {
 //    code_724().pivotIndex(tempArr);
 //    code_26().removeDuplicates(tempArr);
 //    code_344().reverseString(tempStrs);
-    code_498().test();
-    code_50().test();
-    code_33().test();
+//    code_498().test();
+//    code_50().test();
+//    code_33().test();
+    code_153().test();
     return 0;
 }
