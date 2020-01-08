@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-
+#include <limits.h>
 /*
  给定一个二叉树，判断其是否是一个有效的二叉搜索树。
  
@@ -48,4 +48,16 @@ public:
         }
         return true;
     }
+    
+    bool isValidBSTT(TreeNode* root) {
+        return helper(root,INT_MIN,INT_MAX);
+    }
+    bool helper(TreeNode* cur,long lt,long rt){
+        if(cur==NULL) return true;
+        if(cur->val<=lt||cur->val>=rt) return false;
+        if(helper(cur->left,lt,cur->val)&&helper(cur->right,cur->val,rt)) return true;
+        return false;
+    }
+    
+   
 };
