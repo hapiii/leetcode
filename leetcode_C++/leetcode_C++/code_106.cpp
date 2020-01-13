@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 #include <vector>
+#include <unordered_map>
+
 using namespace std;
 
 /*
@@ -74,29 +76,27 @@ public:
         return root;
        }
     
-    TreeNode* buildhelper(vector<int>& inorder,int inl, int inr ,vector<int>& postorder,int postl,int postr)
-    {
-        if (inl>inr || postl>postr) {
-            return nullptr;
+    unordered_map<int, int> map;
+    int index;
+    TreeNode * buildTree(vector<int>& inorder, vector<int>& postorder) {
+        index = inorder.size() - 1;
+        for (int i = 0; i <= index; i++) {
+            map[inorder[i]] = i;
         }
-        int rootval = postorder[postr];
-        int privot = 0;
-        ///找出中序的根
-        for (int i = inl; i<inr; i++) {
-            if (rootval == inorder[i]) {
-                privot = i;
-                break;
-            }
-        }
-        TreeNode *root = new TreeNode(rootval);
-        //privot-1-inl
-        root->left = buildhelper(inorder, inl, privot-1, postorder, postl, privot-1-inl);
-        root->right = buildhelper(inorder, privot+1, inr, postorder, postr-inr+privot, postr-1);
+        return buildTreeByRecursion(inorder, postorder, 0, index);
+    }
+    TreeNode * buildTreeByRecursion(vector<int> inorder,vector<int> postorder,int inorder_start,int inorder_end){
+        if (inorder_start > inorder_end)
+            return NULL;
+         //左右根 先拿到根节点的值,确定其在中序遍历的位置，并且将其后序遍历的索引值的末尾往前一位
+        int inorder_root = map[postorder[index]];//中序遍历的位置
+        TreeNode *root = new TreeNode(postorder[index--]);
+        //然后确定左右子树，并且递归即可
+        // 注意哦！是必须先递归右子树，再递归左子树，因为后序是左右根的顺序，后序末尾自减一，此时应该是右子树的根节点！
+        // 所以必须全部右子树构建完成再去构建左子树
+        root->right = buildTreeByRecursion(inorder, postorder, inorder_root + 1,inorder_end);
+        root->left = buildTreeByRecursion(inorder, postorder, inorder_start, inorder_root-1);
         return root;
-    }
-    
-    TreeNode *buildTree(vector<int> &inorder,vector<int> &postorder){
-        int length = inorder.size();
-        return buildhelper(inorder, 0, length-1, postorder, 0, length-1);
-    }
+        
+    };
 };
