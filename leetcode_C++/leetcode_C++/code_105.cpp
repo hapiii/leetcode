@@ -58,7 +58,7 @@ public:
         }
         int i = map[preorder[index]];
         
-        TreeNode *root = new TreeNode(preorder[index--]);
+        TreeNode *root = new TreeNode(preorder[index++]);
         root->right = helper(preorder,inorder,i+1,inorderEnd);
         root->left = helper(preorder,inorder,inorderBegin,i-1);
         
