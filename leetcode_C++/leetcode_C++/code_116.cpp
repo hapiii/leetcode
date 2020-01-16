@@ -39,5 +39,48 @@ public:
         connect(root->right);
         return root;
     }
+    
+    //方法2:记录上级节点遍历
+    Node* connectt(Node* root) {
+        if (!root) return NULL;
+        auto start = root;
+        while (start->left) {
+            auto pre = start, cur = pre->next;
+            while (pre) {
+                pre->left->next = pre->right;
+                if (cur) pre->right->next = cur->left;
+                
+                // 下一趟
+                pre = cur;
+                if (cur) cur = cur->next;
+            }
+            start = start->left;
+        }
+        return root;
+    }
+    
+    Node* connecct(Node* root) {
+        if (root == nullptr) {
+            return root;
+        }
+        Node *start = root;
+        while (start->left) {
+            Node *pre = start;//记录上一个节点
+            Node *cur = pre->next;//当前节点
+            while (pre) {
+                pre->left->next = pre->right;
+                if (cur) {
+                    pre->right->next = cur->left;
+                }
+                pre = cur;
+                if (cur) {
+                    cur = cur->next;
+                }
+            }
+            start = start->left;
+        }
+        return root;
+    }
+    
 };
 
