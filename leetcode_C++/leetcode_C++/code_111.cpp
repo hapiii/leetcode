@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-
+#include <unordered_set>
 /*
  给定一个二叉树，找出其最小深度。
 
@@ -63,6 +63,6 @@ public:
         if (node->right == NULL && node->left != NULL) {
             return helper(node->left,depth );
         }
-        return min(helper(node->left,depth ),helper(node->right, depth));
+        return fmin(helper(node->left,depth ),helper(node->right, depth));
     }
 };
