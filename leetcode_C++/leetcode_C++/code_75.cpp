@@ -22,14 +22,13 @@ using namespace std;
  输入: [2,0,2,1,1,0]
  输出: [0,0,1,1,2,2]
  */
+
 class code_75 {
-    
     
 public:
    void sortColors(vector<int>& nums) {
        
         int p0 = 0, curr = 0;
-       
         int p2 = nums.size() - 1;
 
         while (curr <= p2) {
@@ -42,5 +41,5 @@ public:
           else curr++;
         }
       }
-
+    
 };
