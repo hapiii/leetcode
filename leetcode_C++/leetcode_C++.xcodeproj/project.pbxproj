@@ -54,6 +54,8 @@
 		BF4367F623AA338E007878B9 /* code_20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4367F523AA338E007878B9 /* code_20.cpp */; };
 		BF4367F823AB1772007878B9 /* code_739.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4367F723AB1772007878B9 /* code_739.cpp */; };
 		BF4367FA23AB23C7007878B9 /* code_200.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4367F923AB23C7007878B9 /* code_200.cpp */; };
+		BF4F721723EEF9A00037E7CA /* code_46.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4F721623EEF9A00037E7CA /* code_46.cpp */; };
+		BF4F721923F039770037E7CA /* code_29.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4F721823F039770037E7CA /* code_29.cpp */; };
 		BF53494C23B337BA0093ED06 /* code_106.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF53494B23B337BA0093ED06 /* code_106.cpp */; };
 		BF6B1D73239111BF00CB482F /* ArrHashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */; };
 		BF6B1D74239111BF00CB482F /* code_454.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6B1D61239111BE00CB482F /* code_454.cpp */; };
@@ -94,9 +96,12 @@
 		BFB5A8FF23E5A073004F1A65 /* code_169.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB5A8FE23E5A073004F1A65 /* code_169.cpp */; };
 		BFB5A90123E704D5004F1A65 /* code_121.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB5A90023E704D5004F1A65 /* code_121.cpp */; };
 		BFB5A90323E70643004F1A65 /* code_122.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB5A90223E70643004F1A65 /* code_122.cpp */; };
+		BFB5A90B23E9B51B004F1A65 /* code_22.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB5A90A23E9B51B004F1A65 /* code_22.cpp */; };
 		BFCBDAA123BF4D1E005A7EAD /* code_278.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCBDAA023BF4D1E005A7EAD /* code_278.cpp */; };
 		BFDBF4FE23C3430700212BD0 /* code_34.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFDBF4FD23C3430700212BD0 /* code_34.cpp */; };
 		BFDBF50B23C466A800212BD0 /* code_367.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFDBF50A23C466A800212BD0 /* code_367.cpp */; };
+		BFE8453F23EDBD3600E0A72C /* code_51.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE8453E23EDBD3600E0A72C /* code_51.cpp */; };
+		BFE8454123EDC69E00E0A72C /* code_70.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE8454023EDC69E00E0A72C /* code_70.cpp */; };
 		BFEB69A723989DDC00307DAB /* code_557.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEB69A623989DDC00307DAB /* code_557.cpp */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +165,8 @@
 		BF4367F523AA338E007878B9 /* code_20.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_20.cpp; sourceTree = "<group>"; };
 		BF4367F723AB1772007878B9 /* code_739.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_739.cpp; sourceTree = "<group>"; };
 		BF4367F923AB23C7007878B9 /* code_200.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_200.cpp; sourceTree = "<group>"; };
+		BF4F721623EEF9A00037E7CA /* code_46.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_46.cpp; sourceTree = "<group>"; };
+		BF4F721823F039770037E7CA /* code_29.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_29.cpp; sourceTree = "<group>"; };
 		BF53494B23B337BA0093ED06 /* code_106.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_106.cpp; sourceTree = "<group>"; };
 		BF6B1D562391115300CB482F /* leetcode_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B1D60239111BE00CB482F /* ArrHashMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrHashMap.cpp; sourceTree = "<group>"; };
@@ -201,9 +208,12 @@
 		BFB5A8FE23E5A073004F1A65 /* code_169.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_169.cpp; sourceTree = "<group>"; };
 		BFB5A90023E704D5004F1A65 /* code_121.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_121.cpp; sourceTree = "<group>"; };
 		BFB5A90223E70643004F1A65 /* code_122.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_122.cpp; sourceTree = "<group>"; };
+		BFB5A90A23E9B51B004F1A65 /* code_22.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_22.cpp; sourceTree = "<group>"; };
 		BFCBDAA023BF4D1E005A7EAD /* code_278.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_278.cpp; sourceTree = "<group>"; };
 		BFDBF4FD23C3430700212BD0 /* code_34.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_34.cpp; sourceTree = "<group>"; };
 		BFDBF50A23C466A800212BD0 /* code_367.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_367.cpp; sourceTree = "<group>"; };
+		BFE8453E23EDBD3600E0A72C /* code_51.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_51.cpp; sourceTree = "<group>"; };
+		BFE8454023EDC69E00E0A72C /* code_70.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_70.cpp; sourceTree = "<group>"; };
 		BFEB69A623989DDC00307DAB /* code_557.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_557.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,17 +251,22 @@
 				BF6B1D67239111BE00CB482F /* code_3.cpp */,
 				BF4367ED23A8E370007878B9 /* code_15.cpp */,
 				BF4367F523AA338E007878B9 /* code_20.cpp */,
+				BFB5A90A23E9B51B004F1A65 /* code_22.cpp */,
 				B557368D23993CA300DD9A2A /* code_26.cpp */,
 				B5573691239BE00100DD9A2A /* code_27.cpp */,
+				BF4F721823F039770037E7CA /* code_29.cpp */,
 				BF84FBE523BC90BD008FE53E /* code_33.cpp */,
 				BFDBF4FD23C3430700212BD0 /* code_34.cpp */,
 				BF6B1D6E239111BF00CB482F /* code_36.cpp */,
+				BF4F721623EEF9A00037E7CA /* code_46.cpp */,
 				BF6B1D6A239111BE00CB482F /* code_49.cpp */,
 				BF7B987E23B1AF6700EE72D9 /* code_50.cpp */,
+				BFE8453E23EDBD3600E0A72C /* code_51.cpp */,
 				BF19AF22239E276F002B0DD6 /* code_54.cpp */,
 				B557368F239BD8A700DD9A2A /* code_58.cpp */,
 				B55736892393FB9B00DD9A2A /* code_66.cpp */,
 				BF84FBE123BC87A8008FE53E /* code_69.cpp */,
+				BFE8454023EDC69E00E0A72C /* code_70.cpp */,
 				BFB5A8FA23D4687A004F1A65 /* code_75.cpp */,
 				BF8D9D9123ADF8AE00951B06 /* code_94.cpp */,
 				B50EDC0223C6112600F9468F /* code_98.cpp */,
@@ -397,6 +412,7 @@
 				BF19AF4023A3903D002B0DD6 /* code_225.cpp in Sources */,
 				BF19AF1B239A3C05002B0DD6 /* code_561.cpp in Sources */,
 				BFB5A8DB23CC7763004F1A65 /* code_105.cpp in Sources */,
+				BF4F721723EEF9A00037E7CA /* code_46.cpp in Sources */,
 				BF4367F023AA0B62007878B9 /* code_98.cpp in Sources */,
 				BF8D9D9223ADF8AE00951B06 /* code_94.cpp in Sources */,
 				BF6B1D73239111BF00CB482F /* ArrHashMap.cpp in Sources */,
@@ -411,6 +427,8 @@
 				BF6B1D82239111BF00CB482F /* NodeList.cpp in Sources */,
 				BF4367F623AA338E007878B9 /* code_20.cpp in Sources */,
 				B50E738C23D5E6E6008BD1AA /* code_236.cpp in Sources */,
+				BFB5A90B23E9B51B004F1A65 /* code_22.cpp in Sources */,
+				BFE8453F23EDBD3600E0A72C /* code_51.cpp in Sources */,
 				B50EDBF123B6410300F9468F /* code_589.cpp in Sources */,
 				B50EDBF923BB8DBF00F9468F /* code_704.cpp in Sources */,
 				BFDBF4FE23C3430700212BD0 /* code_34.cpp in Sources */,
@@ -451,6 +469,7 @@
 				BF6B1D77239111BF00CB482F /* code_771.cpp in Sources */,
 				B50EDC0323C6112600F9468F /* code_98.cpp in Sources */,
 				BF84FBE623BC90BD008FE53E /* code_33.cpp in Sources */,
+				BF4F721923F039770037E7CA /* code_29.cpp in Sources */,
 				B50E734823D0AD74008BD1AA /* code_226.cpp in Sources */,
 				B50EDBE723AF9EDD00F9468F /* code_102.cpp in Sources */,
 				BF4367F423AA1E34007878B9 /* code_155.cpp in Sources */,
@@ -474,6 +493,7 @@
 				BF19AF4423A760B0002B0DD6 /* code_242.cpp in Sources */,
 				BF6B1D7C239111BF00CB482F /* code_349.cpp in Sources */,
 				BF7B987F23B1AF6700EE72D9 /* code_50.cpp in Sources */,
+				BFE8454123EDC69E00E0A72C /* code_70.cpp in Sources */,
 				B5573688239388B900DD9A2A /* code_747.cpp in Sources */,
 				BF6B1D7D239111BF00CB482F /* code_49.cpp in Sources */,
 				B557368C2397F29000DD9A2A /* code_151.cpp in Sources */,

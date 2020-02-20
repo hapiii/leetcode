@@ -49,7 +49,10 @@ class code_111 {
 public:
     int minDepth(TreeNode* root) {
         if (root == NULL) return 0;
-        return helper(root, 1);
+        if (!root->left) return minDepth(root->right)+1;
+        if (!root->right) return minDepth(root->left)+1;
+        return fmin(minDepth(root->left),minDepth(root->right)) + 1;
+        //return helper(root, 1);
     }
     
     int helper(TreeNode *node,int depth){

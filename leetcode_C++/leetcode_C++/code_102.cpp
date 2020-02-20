@@ -22,22 +22,45 @@ class code_102 {
 private:
     vector <vector<int>> result;
 public:
-    void helper(TreeNode *root,int level){
+    void DFS(TreeNode *root,int level){
         if (result.size() == level) {
             vector<int> newRes;
             result.push_back(newRes);
         }
         result[level].push_back(root->val);
         if (root->left != NULL) {
-            helper(root->left, level+1);
+            DFS(root->left, level+1);
         }
         if (root->right != NULL) {
-            helper(root->right, level+1);
+            DFS(root->right, level+1);
         }
     }
-    vector<vector<int>> levelOrder(TreeNode* root) {
+    vector<vector<int>> levelOrderr(TreeNode* root) {
         if (root == NULL) return result;
-        helper(root, 0);
+        DFS(root, 0);
         return result;
     }
+    
+    ///BFS 广度优先搜索解法
+    vector<vector<int>> levelOrder(TreeNode* root) {
+        vector <vector<int>> end;
+        if (root == NULL) return end;
+        queue<TreeNode *> queue;
+        queue.push(root);
+        while (!queue.empty()) {
+            int level_size = queue.size();
+            vector<int> current_level;
+            for (int i = 0; i<level_size; i++) {
+                TreeNode *node = queue.front();
+                queue.pop();
+                current_level.push_back(node->val);
+                if (node->left) queue.push(node->left);
+                if (node->right) queue.push(node->right);
+            }
+            end.push_back(current_level);
+        }
+        return end;
+    }
+    
+    
 };
