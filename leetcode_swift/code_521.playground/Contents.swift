@@ -9,4 +9,6 @@ class Solution {
     }
 }
 
+Solution().findLUSlength("123", "12")
+
 
